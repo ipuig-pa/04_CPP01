@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 13:58:27 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/12/21 14:21:09 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2024/12/21 16:29:17 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ int	main(void)
 	i = -1;
 	while (++i < n)
 		zombie_horde[i].announce();
-	delete zombie_horde;
+	delete[] zombie_horde;
+	return (0);
 }
