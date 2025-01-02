@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 14:00:37 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/01/02 19:40:38 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:28:42 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ Zombie* zombieHorde( int N, std::string name )
 	i = 0;
 	while (i < N)
 	{
-		zombie_horde[i].set_name(name);
+		zombie_horde[i].setName(name);
 		i++;
 	}
 	return (zombie_horde);

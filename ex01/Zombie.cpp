@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 12:59:52 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/12/21 16:24:53 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:28:53 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	Zombie::announce(void)
 	std::cout << name + ":  BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-void	Zombie::set_name(std::string given_name)
+void	Zombie::setName(std::string given_name)
 {
 	name = given_name;
 }
