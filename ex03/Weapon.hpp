@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 20:09:45 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/01/02 20:09:45 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/02 14:09:54 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
 class Weapon{
 
 public:
-	Weapon(std::string given_type);
+	Weapon(std::string type);
 	const std::string&	getType(void);
-	void				setType(std::string given_type);
+	void				setType(std::string new_type);
 
 private:
 	std::string			type;

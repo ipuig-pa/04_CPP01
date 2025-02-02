@@ -6,19 +6,18 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 20:09:30 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/01/02 20:09:30 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/02 14:14:06 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 
-HumanA::HumanA(std::string given_name, std::string given_type)
+HumanA::HumanA(std::string name, Weapon &weapon)
+	: name(name), weapon(weapon)
 {
-	weapon.setType(given_type);
-	name = given_name;
 }
 
 void	HumanA::attack(void)
 {
-	std::cout << name + "attacks with their" + weapon.getType() << std::endl;
+	std::cout << name + " attacks with their " + weapon.getType() << std::endl;
 }

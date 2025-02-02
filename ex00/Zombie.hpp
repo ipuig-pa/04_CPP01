@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 12:56:33 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/12/21 13:38:14 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/02 14:07:19 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Zombie{
 
 public:
-	Zombie(std::string given_name);
+	Zombie(std::string name);
 	~Zombie(void);
 	void	announce(void);
 

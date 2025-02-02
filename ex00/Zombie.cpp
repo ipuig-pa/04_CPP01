@@ -6,15 +6,15 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/21 12:59:52 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2024/12/21 13:54:49 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/02 14:07:10 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie(std::string given_name)
+Zombie::Zombie(std::string name)
+	: name(name)
 {
-	name = given_name;
 }
 
 Zombie::~Zombie(void)

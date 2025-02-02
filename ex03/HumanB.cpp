@@ -6,23 +6,26 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 20:09:36 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/01/02 20:09:36 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/02 14:13:58 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string given_name)
+HumanB::HumanB(std::string name)
+	: name(name), weapon(NULL)
 {
-	name = given_name;
 }
 
-void	HumanB::setWeapon(std::string given_type)
+void	HumanB::setWeapon(Weapon &new_weapon)
 {
-	weapon.setType(given_type);
+	weapon = &new_weapon;
 }
 
 void	HumanB::attack(void)
 {
-	std::cout << name + "attacks with their" +  weapon.getType() << std::endl;
+	if (weapon)
+		std::cout << name + " attacks with their " +  weapon->getType() << std::endl;
+	else
+		std::cout << name + " has no weapon to attack with!" << std::endl;
 }
