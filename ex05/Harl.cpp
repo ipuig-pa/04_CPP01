@@ -6,12 +6,28 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 12:37:46 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/02/04 15:16:27 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/04 15:37:26 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
-#include <map>
+//No maps allowed until module 08 
+//#include <map>
+
+//void	Harl::complain(std::string level)
+// {
+// 	std::map<std::string, void (Harl::*)()>				message;
+// 	std::map<std::string, void (Harl::*)()>::iterator	it;
+
+// 	message["DEBUG"] = &Harl::debug;
+// 	message["INFO"] = &Harl::info;
+// 	message ["WARNING"] = &Harl::warning;
+// 	message ["ERROR"] = &Harl::error;
+	
+// 	it = message.find(level);
+// 	if (it != message.end())
+// 		(this->*it->second)();
+// }
 
 Harl::Harl(void)
 {
@@ -19,17 +35,17 @@ Harl::Harl(void)
 
 void	Harl::complain(std::string level)
 {
-	std::map<std::string, void (Harl::*)()>				message;
-	std::map<std::string, void (Harl::*)()>::iterator	it;
+	std::string	levels[] = {"DEBUG", "INFO", "WARNING", "ERROR"};
+	void		(Harl::*funcs[])() = {&Harl::debug, &Harl::info, &Harl::warning, &Harl::error};
+	int			i;
 
-	message["DEBUG"] = &Harl::debug;
-	message["INFO"] = &Harl::info;
-	message ["WARNING"] = &Harl::warning;
-	message ["ERROR"] = &Harl::error;
-	
-	it = message.find(level);
-	if (it != message.end())
-		(this->*it->second)();
+	i = 0;
+	while (i < 4)
+	{
+		if (level == levels[i])
+			(this->*funcs[i])();
+		i++;
+	}
 }
 
 void	Harl::debug(void)
