@@ -6,7 +6,7 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 20:09:33 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/02/02 14:12:36 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/04 12:45:57 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@
 class HumanA{
 
 public:
-	void	attack(void);
 	HumanA(std::string name, Weapon &weapon);
+	void	attack(void);
 
 private:
 	std::string	name;
