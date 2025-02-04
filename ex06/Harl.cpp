@@ -6,28 +6,11 @@
 /*   By: ipuig-pa <ipuig-pa@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 12:37:46 by ipuig-pa          #+#    #+#             */
-/*   Updated: 2025/02/04 16:12:13 by ipuig-pa         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:12:38 by ipuig-pa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
-//No maps allowed until module 08 
-//#include <map>
-
-//void	Harl::complain(std::string level)
-// {
-// 	std::map<std::string, void (Harl::*)()>				message;
-// 	std::map<std::string, void (Harl::*)()>::iterator	it;
-
-// 	message["DEBUG"] = &Harl::debug;
-// 	message["INFO"] = &Harl::info;
-// 	message ["WARNING"] = &Harl::warning;
-// 	message ["ERROR"] = &Harl::error;
-	
-// 	it = message.find(level);
-// 	if (it != message.end())
-// 		(this->*it->second)();
-// }
 
 Harl::Harl(void)
 {
